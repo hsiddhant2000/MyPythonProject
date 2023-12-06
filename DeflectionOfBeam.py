@@ -10,7 +10,7 @@ YoungModulus = float(input("Enter the Youngs modulus of beam in N/m2:"))
 MomentofInertia = float(input("Enter the Moment of Inertia in kgm^2:"))
 Deflectiondistance = float(input("Enter the distance where deflection is going to happen in metres:")) 
 pi = 3.14
-
+#A is a constant
 A = (-4*BendingMoment*BeamHeight**2)/(YoungModulus*MomentofInertia*pi**3)
 
 Deflection = A * math.sin((pi*Deflectiondistance)/BeamHeight)
