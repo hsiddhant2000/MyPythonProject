@@ -4,18 +4,18 @@
 import math
 from sympy import*
 
-BeamHeight = float(input("Enter the length of beam:"))
-BM = float(input("Enter the Bending moment applied on beam:"))
-E = float(input("Enter the Youngs modulus of beam:"))
-I = float(input("Enter the Moment of Inertia:"))
-x = float(input("Enter the distance where deflection is going to happen:")) 
+BeamHeight = float(input("Enter the length of beam in metres:"))
+BendingMoment = float(input("Enter the Bending moment applied on beam in N.m :"))
+YoungModulus = float(input("Enter the Youngs modulus of beam in N/m2:"))
+MomentofInertia = float(input("Enter the Moment of Inertia in kgm^2:"))
+Deflectiondistance = float(input("Enter the distance where deflection is going to happen in metres:")) 
 pi = 3.14
 
-A = (-4*BM*BeamHeight**2)/(E*I*pi**3)
+A = (-4*BendingMoment*BeamHeight**2)/(YoungModulus*MomentofInertia*pi**3)
 
-Deflectiondistance = A * math.sin((pi*x)/BeamHeight)
+Deflection = A * math.sin((pi*Deflectiondistance)/BeamHeight)
 
-print("The deflection of beam at " ,x, "distance is:",Deflectiondistance)
+print("The deflection of beam at " ,Deflectiondistance, "distance is:",Deflection)
 
 
 
