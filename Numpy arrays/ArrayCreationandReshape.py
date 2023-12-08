@@ -1,3 +1,5 @@
+#Creating various arrays and performing various array operations
+#Created on 8.12.2023
 import numpy as np
 print("Select choice:")
 print("1:Preparing an array from range 0 to 25 and then reshaping into a 5*5 array")
