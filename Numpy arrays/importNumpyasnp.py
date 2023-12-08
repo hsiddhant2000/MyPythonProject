@@ -1,3 +1,5 @@
+#Creating a diagonal matrix and finding out the unknown coefficients
+#Created on 5.12.2023
 import numpy as np
 import sys
 
