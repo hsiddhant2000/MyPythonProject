@@ -1,5 +1,5 @@
 #Creating a boolean array
-
+#Created on 5.12.2023
 import numpy as np
 #boolean array
 arr=np.array([0,1,1,0,0,1])
