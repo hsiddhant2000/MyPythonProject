@@ -1,16 +1,20 @@
-#
+#Finding out the eigenvalues and eigenvectors of a 4*4 matrix and finding the diagonal of eigenvalues
+
+#All imports are declared here.
 import numpy as np
-m = np.array([[9, 7, 8, 4],[9, 8, 6, 4],[4, 3, 4, 8],[6, 1, 8, 5]])
-print(" Original square array:-",m)
+InitialMatrix = np.array([[9, 7, 8, 4],[9, 8, 6, 4],[4, 3, 4, 8],[6, 1, 8, 5]])
+print(" Original square array:-")
+print(InitialMatrix)
 #finding eigenvalues and eigenvectors 
-w, v = np.linalg.eig(m)
+eigenValues, eigenVectors= np.linalg.eig(InitialMatrix)
 #Printing the eigenvalues
-print("Eigenvalues:-",w)
+print("Eigenvalues:-",eigenValues)
 #Printing the eigenvectors
-print("Eigenvectors:-",v)
+print("Eigenvectors:-")
+print(eigenVectors)
 
 #Converting 1D array to 2D array
-def convert_1d_to_2d(w, var):
+def convert_1d_to_2d(eigenValues, var):
     #Convert the list to a numpy array
     arr = np.array(w)
     #Calculating the cumulative sum of the variable lengths list
