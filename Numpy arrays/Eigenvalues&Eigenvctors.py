@@ -9,7 +9,7 @@ print("Eigenvalues:-",w)
 #Printing the eigenvectors
 print("Eigenvectors:-",v)
 
-#
+#Converting 1D array to 2D array
 def convert_1d_to_2d(w, var):
     #Convert the list to a numpy array
     arr = np.array(w)
